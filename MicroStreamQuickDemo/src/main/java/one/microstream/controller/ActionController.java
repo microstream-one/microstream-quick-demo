@@ -13,6 +13,6 @@ public class ActionController
 	@Produces(MediaType.TEXT_PLAIN)
 	public void action()
 	{
-		
+		System.out.println("Still some more java code necessary to do fancy stuff");
 	}
 }
