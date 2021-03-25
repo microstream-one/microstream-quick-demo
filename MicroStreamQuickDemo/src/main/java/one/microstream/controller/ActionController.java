@@ -1,9 +1,13 @@
 package one.microstream.controller;
 
+import java.time.Instant;
+import java.util.stream.IntStream;
+
 import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Produces;
+import one.microstream.Application;
 
 
 @Controller("/action")
@@ -13,6 +17,11 @@ public class ActionController
 	@Produces(MediaType.TEXT_PLAIN)
 	public void action()
 	{
-		System.out.println("Still some more java code necessary to do fancy stuff");
+		IntStream.rangeClosed(1, 50).forEach(i ->
+		{
+			Application.instants.add(Instant.now().plusSeconds(i));
+		});
+		
+		Application.storageManager.store(Application.instants);
 	}
 }
