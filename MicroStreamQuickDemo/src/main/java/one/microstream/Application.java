@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import io.micronaut.runtime.Micronaut;
-import one.microstream.storage.types.EmbeddedStorage;
-import one.microstream.storage.types.EmbeddedStorageManager;
+import one.microstream.storage.embedded.types.EmbeddedStorage;
+import one.microstream.storage.embedded.types.EmbeddedStorageManager;
 
 
 public class Application

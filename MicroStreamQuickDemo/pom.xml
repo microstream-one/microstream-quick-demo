@@ -29,9 +29,9 @@
 			<url>https://repo.maven.apache.org/maven2</url>
 		</repository>
 		<repository>
-        <id>microstream-releases</id>
-        <url>https://repo.microstream.one/repository/maven-public/</url>
-    </repository>
+			<id>microstream-releases</id>
+			<url>https://repo.microstream.one/repository/maven-public/</url>
+		</repository>
 	</repositories>
 
 	<dependencies>
@@ -87,15 +87,13 @@
 		</dependency>
 		<dependency>
 			<groupId>one.microstream</groupId>
-			<artifactId>storage.embedded</artifactId>
-			<version>04.01.00-MS-GA</version>
-			<scope>compile</scope>
+			<artifactId>microstream-storage-embedded</artifactId>
+			<version>05.00.02-MS-GA</version>
 		</dependency>
 		<dependency>
 			<groupId>one.microstream</groupId>
-			<artifactId>storage.embedded.configuration</artifactId>
-			<version>04.01.00-MS-GA</version>
-			<scope>compile</scope>
+			<artifactId>microstream-storage-embedded-configuration</artifactId>
+			<version>05.00.02-MS-GA</version>
 		</dependency>
 	</dependencies>
 
